@@ -35,7 +35,6 @@ p {
     position: relative;
     top: 50px;
 
-    background: linear-gradient(to right, rgb(228, 18, 53), rgb(102, 3, 41));
     mix-blend-mode: screen;
     font-family: 'Paytone One', sans-serif;
     font-size: 80px;
@@ -103,7 +102,6 @@ p {
 
 .username input {
     padding: 15px 20px;
-    border: none;
     outline: none;
     width: 100%;
     background: transparent;
@@ -115,7 +113,6 @@ p {
 
 .inputBox input {
     padding: 15px 20px;
-    border: none;
     outline: none;
     width: 100%;
     background: transparent;
@@ -183,7 +180,6 @@ p {
     background-size: cover;
     width: 30px;
     height: 30px;
-    background-size: cover;
     cursor: pointer;
 }
 
@@ -193,14 +189,10 @@ p {
 }
 
 button {
-    border: none;
     outline: none;
     font-size: 20px;
     border-radius: 20px;
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 15px 60px;
     border: 2px solid white ;
     cursor: pointer;
 }
