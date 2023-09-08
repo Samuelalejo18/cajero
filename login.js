@@ -1,7 +1,7 @@
 const Mali={
     Name:'Mali',
     User : "1014180480",
-    password:'Lukas2004',
+    contra:'Lukas2004',
 }
 const Gera={
     Name:'Gera',
@@ -24,26 +24,28 @@ function showHide(){
         togglePassword.classList.remove('hide')
     }
 }
-const ingresar=document.querySelector('#ingresar');
 
 
+const ingresar=document.getElementById('#ingresar');
+
+
+let response2 = password.value;
 ingresar.addEventListener('click', function() {
-    const input1 = document.querySelector('#username1');
+    //let input1 = document.getElementById('username1');
+    console.log(ingresar);
 
-    const response1 = input1.value;
-    const response2 = password.value;
-
-
-    if (Mali.User && Mali.password === response1 && response2) {
-        input1.textContent = "usuario valido";
-        console.log(input1)
-        password.textContent = "Password valida";
+   // const response1 = input1.value;
+    if ( Mali.contra === response2) {
+       // input1.textContent = "usuario valido";
+        console.log("Password valido ");
+       // password.textContent = "Password valida";
     } else {
-        console.log(password)
-        input1.textContent = "Usuario invalido, intente nuevamente";
-        password.textContent = "Password invalido, intente nuevamente";
+
+        console.log("Password invalido valido ");
+       // input1.textContent = "Usuario invalido, intente nuevamente";
+        //password.textContent = "Password invalido, intente nuevamente";
     }
-}
+})
 
 
 
