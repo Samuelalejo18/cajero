@@ -24,25 +24,26 @@ function showHide(){
         togglePassword.classList.remove('hide')
     }
 }
-//const ingresar=document.querySelector('#ingresar');
-
-//const User= "1014180480";
-  // const password='Lukas2004';
-
-//ingresar.addEventListener('click', function(){
-  //  const input1= document.querySelector('#username1');
-    //const input2= document.querySelector('#password');
-   //const response1= input1.value;
-   //const response2=input2.value;
+const ingresar=document.querySelector('#ingresar');
 
 
-  //  if(User&&password===response1&&response2){
-    //input1.textContent="usuario valido";
-    //input2.textContent="Password valida";
-   //} else{
-    //input1.textContent="Usuario invalido, intente nuevamente";
-    //input2.textContent="Password invalido, intente nuevamente";
-  //}
-//})
+ingresar.addEventListener('click', function() {
+    const input1 = document.querySelector('#username1');
+
+    const response1 = input1.value;
+    const response2 = password.value;
+
+
+    if (Mali.User && Mali.password === response1 && response2) {
+        input1.textContent = "usuario valido";
+        console.log(input1)
+        password.textContent = "Password valida";
+    } else {
+        console.log(password)
+        input1.textContent = "Usuario invalido, intente nuevamente";
+        password.textContent = "Password invalido, intente nuevamente";
+    }
+}
+
 
 
