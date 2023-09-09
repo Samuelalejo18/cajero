@@ -42,8 +42,6 @@ const PassWordIncorrect2=document.createTextNode('Contraseña incorrecta');
 }
 
 })
-
-
 function showHide(){
     if(password.type==='password'){
         password.setAttribute('type','text');
