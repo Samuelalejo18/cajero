@@ -1,20 +1,41 @@
-const Mali={
-    Name:'Mali',
-    User : "1014180480",
-    contra:'Lukas2004',
-}
-const Gera={
-    Name:'Gera',
-    User : 1018940180,
-    password:'Layou2020',
-}
-const Maui={
-    Name:'Maui',
-    User : 1000796256,
-    password:'Passwoord',
-}
+
 let password=document.getElementById('password');
 let togglePassword=document.getElementById('toggle');
+let username1= document.getElementById('username1');
+const ingresar= document.getElementById('ingresar');
+const contra='Lukas2012Jake';
+const user='1014140745'
+const ElementFather=document.getElementById('incorrect');
+ingresar.addEventListener('click', function (){
+    const response=password.value;
+    const response2= username1.value;
+
+if(user===response2 && contra===response  ){
+alert('Usuario y contraseña correctas ');
+
+
+
+
+    }else if(user===response2 && contra!==response ) {
+    alert('Contraseña incorrecta');
+
+const PassWordIncorrect= document.createElement('p');
+const PassWordIncorrect2=document.createTextNode('Contraseña incorrecta');
+    ElementFather.appendChild(PassWordIncorrect);
+    ElementFather.appendChild(PassWordIncorrect2);
+
+
+
+}else if (user!==response2 && contra!==response){
+    alert('el usuario no existe');
+
+    }else if(null===response2 && null===response ){
+    alert('ingresa un dato valido ')
+}
+
+})
+
+
 function showHide(){
     if(password.type==='password'){
         password.setAttribute('type','text');
@@ -26,26 +47,8 @@ function showHide(){
 }
 
 
-const ingresar=document.getElementById('#ingresar');
 
 
-let response2 = password.value;
-ingresar.addEventListener('click', function() {
-    //let input1 = document.getElementById('username1');
-    console.log(ingresar);
-
-   // const response1 = input1.value;
-    if ( Mali.contra === response2) {
-       // input1.textContent = "usuario valido";
-        console.log("Password valido ");
-       // password.textContent = "Password valida";
-    } else {
-
-        console.log("Password invalido valido ");
-       // input1.textContent = "Usuario invalido, intente nuevamente";
-        //password.textContent = "Password invalido, intente nuevamente";
-    }
-})
 
 
 

@@ -5,7 +5,9 @@
     box-sizing: border-box;
 
 }
-
+#incorrect{
+    color:white;
+}
 .header {
     z-index: 1;
 }
