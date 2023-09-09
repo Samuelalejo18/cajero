@@ -13,23 +13,31 @@ ingresar.addEventListener('click', function (){
 if(user===response2 && contra===response  ){
 alert('Usuario y contraseña correctas ');
 
-
-
-
     }else if(user===response2 && contra!==response ) {
-    alert('Contraseña incorrecta');
-
 const PassWordIncorrect= document.createElement('p');
 const PassWordIncorrect2=document.createTextNode('Contraseña incorrecta');
     ElementFather.appendChild(PassWordIncorrect);
     ElementFather.appendChild(PassWordIncorrect2);
 
+  setTimeout(() =>{
+      location.reload();
+  },2000);
+
 
 
 }else if (user!==response2 && contra!==response){
-    alert('el usuario no existe');
 
-    }else if(null===response2 && null===response ){
+    const UserdontE= document.createElement('p');
+    const  UserdontE2=document.createTextNode('El usuario no existe');
+    ElementFather.appendChild( UserdontE);
+    ElementFather.appendChild( UserdontE2);
+
+    setTimeout(() =>{
+        location.reload();
+    },2000);
+
+
+}else if(null===response2 && null===response ){
     alert('ingresa un dato valido ')
 }
 
