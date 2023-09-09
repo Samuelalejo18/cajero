@@ -5,14 +5,43 @@
     box-sizing: border-box;
 
 }
-#incorrect{
+#incorrect {
     z-index: 1;
-    color:white;
+    color: white;
     position: absolute;
-    top:80px;
+    top: 80px;
     right: 80px;
+    display: none;
+    border: 4px solid white;
+     border-radius: 20px;
+    padding: 30px;
+    font-size: 25px;
+    font-family: 'Paytone One', sans-serif;
 
+    background-color: purple;
+    opacity: 0; /* Inicialmente, el elemento es completamente transparente */
+    animation: aparecer 1s ease-in-out forwards;
 }
+
+@keyframes aparecer {
+    0% {
+        opacity: 0; /* Comienza completamente transparente */
+    }
+    100% {
+        opacity: 1; /* Termina completamente visible */
+    }
+}
+#incorrect::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -15px; /* Alinea la cola en el centro y la hace un poco más grande */
+    border-width: 15px; /* Aumenta el tamaño de la cola */
+    border-style: solid;
+    border-color: #f0f0f0 transparent transparent transparent
+}
+
 .header {
     z-index: 1;
 }
