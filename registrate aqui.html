@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Titan+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Play:wght@400;700&family=Titan+One&display=swap"
+            rel="stylesheet">
+    <style>
+        * {
+            background-color: rgb(25, 0, 32);
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        .header {
+            z-index: 1;
+        }
+
+        .container {
+            z-index: 0;
+            position: relative;
+            top: 50px;
+            right: 50px;
+            display: flex;
+            gap: 20px;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            cursor: default;
+        }
+
+        #wolf_logo {
+            height: 100px;
+            width: 150px;
+
+        }
+
+        p {
+            color: white;
+        }
+        #wolf_banck {
+            position: relative;
+            top: 30px;
+
+            mix-blend-mode: screen;
+            font-family: 'Paytone One', sans-serif;
+            font-size: 50px;
+
+
+            background: url(https://i.gifer.com/WSG.gif);
+            -webkit-background-clip: text;
+
+            -webkit-text-fill-color: transparent;
+
+        }
+        .container2 {
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: default;
+        }
+
+        #bancavirtual {
+            font-size: 20px;
+            font-family: 'Paytone One', sans-serif;
+        }
+        .container3 {
+            border-radius: 20px;
+            height: 500px;
+            width: 600px;
+            display: flex;
+            gap: 30px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 5px solid purple;
+        }
+
+        .tarjeta {
+            height: 500px;
+            width: 600px;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            gap: 35px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .inputBox2{
+            position: relative;
+            width: 450px;
+            gap: 40px;
+
+
+        }
+        .username input {
+            padding: 15px 20px;
+            outline: none;
+            width: 100%;
+            background: transparent;
+            border-radius: 8px;
+            color: #fff;
+            border: 1px solid rgb(233, 19, 52);
+            font-size: 1em;
+        }
+        .container4 {
+            flex-direction: row;
+            justify-content: center;
+            gap: 40px !important;
+            align-items: center;
+        }
+        .btn{
+            gap: 20px;
+            outline: none;
+            font-size: 20px;
+            border-radius: 20px;
+            padding: 15px 60px;
+            border: 2px solid white ;
+            cursor: pointer;
+        }
+
+        .btn:hover{
+            background-color:purple;
+            border-color: black;
+        }
+
+        .btn p{
+            font-family: 'Paytone One', sans-serif;
+            background-color: transparent;
+
+        }
+    </style>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <img src="logo wolf.png" id="wolf_logo" alt="">
+        <p id="wolf_banck">Wolf Bank</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</header>
+
+<main>
+    <div class="container2">
+        <p id="bancavirtual"> información personal  </p>
+        <br>
+        <div class="container3">
+            <div class="tarjeta">
+
+                <div class="inputBox2">
+                      <p> Cedula de ciudadania </p>
+                    <div class="username"><label>
+                        <input type="number" >
+                    </label> </div>
+                    <p> numero de celular </p>
+                    <div class="username"><label>
+                        <input type="number" >
+                    </label></div>
+                    <p> Correo electronico </p>
+                    <div class="username"><label>
+                        <input type="email" >
+                    </label></div>
+                    <p> Confirma el correo electronico </p>
+                    <div class="username"><label>
+                        <input type="email" >
+                    </label></div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+  </main>
+ <div class="container4">
+    <button class="btn"><a href="Login.html"><p>Canselar</p></a></button>
+
+    <button class="btn" id="siguiente">
+
+        <p >siguiente</p>
+    </button>
+</body>
+</html>
