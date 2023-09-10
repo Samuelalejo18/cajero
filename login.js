@@ -31,15 +31,13 @@ const PassWordIncorrect2=document.createTextNode(' ❌ Contraseña incorrecta ')
 } else if (response2.trim() === "" || response.trim() === "") {
 
     const UserdontE4 = document.createElement('p');
-    const UserdontE3 = document.createTextNode(' ❌ Ingresa un dato válido');
+    const UserdontE3 = document.createTextNode(' ❌ Ingresa un dato valido');
     ElementFather.appendChild(UserdontE4);
     ElementFather.appendChild(UserdontE3);
     ElementFather.style.display = 'block';
     setTimeout(() => {
         location.reload();
     }, 2000);
-
-
 } else if (user!==response2 && contra!==response) {
 
     const UserdontE = document.createElement('p');
@@ -50,8 +48,6 @@ const PassWordIncorrect2=document.createTextNode(' ❌ Contraseña incorrecta ')
     setTimeout(() => {
         location.reload();
     }, 2000);
-
-
 }
 })
 function showHide(){
