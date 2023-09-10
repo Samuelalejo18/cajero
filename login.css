@@ -142,7 +142,7 @@ p {
     outline: none;
     width: 100%;
     background: transparent;
-    border-radius: 5px;
+    border-radius: 8px;
     color: #fff;
     border: 1px solid rgb(233, 19, 52);
     font-size: 1em;
@@ -153,8 +153,9 @@ p {
     outline: none;
     width: 100%;
     background: transparent;
-    border-radius: 5px;
+    border-radius: 8px;
     color: #fff;
+
     border: 1px solid rgb(233, 19, 52);
     font-size: 1em;
 

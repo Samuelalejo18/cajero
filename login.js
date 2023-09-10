@@ -38,8 +38,6 @@ const PassWordIncorrect2=document.createTextNode(' ❌ Contraseña incorrecta ')
     setTimeout(() => {
         location.reload();
     }, 2000);
-
-
 } else if (user!==response2 && contra!==response) {
 
     const UserdontE = document.createElement('p');
