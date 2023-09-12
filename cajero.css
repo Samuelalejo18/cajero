@@ -1,0 +1,41 @@
+header {
+    z-index: 1;
+}
+
+.container {
+    z-index: 0;
+
+
+
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+
+    cursor: default;
+}
+
+#wolf_logo {
+    height: 50px;
+    width: 60px;
+
+}
+
+p {
+    color: white;
+}
+
+#wolf_banck {
+
+
+
+    mix-blend-mode: screen;
+    font-family: 'Paytone One', sans-serif;
+    font-size: 50px;
+
+
+    background: url(https://i.gifer.com/WSG.gif);
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+
+}
