@@ -6,18 +6,15 @@ const ingresar= document.getElementById('ingresar');
 const contra='Lukas2012Jake';
 const user='1014140745'
 const ElementFather=document.getElementById('incorrect');
+const Next= document.getElementById("siguiente");
+const Tarjet=document.getElementById("next");
 
 ingresar.addEventListener('click', function (){
     const response=password.value;
     const response2= username1.value;
 
 if(user===response2 && contra===response  ){
-
-    window.location.href = 'cajero.html';
-
-
-
-
+    window.location.href = 'cajero ultimate.html';
 }else if(user===response2 && contra!==response ) {
 const PassWordIncorrect= document.createElement('p');
 const PassWordIncorrect2=document.createTextNode(' ❌ Contraseña incorrecta ');
@@ -49,6 +46,9 @@ const PassWordIncorrect2=document.createTextNode(' ❌ Contraseña incorrecta ')
         location.reload();
     }, 2000);
 }
+})
+Next.addEventListener('click', function (){
+
 })
 function showHide(){
     if(password.type==='password'){
