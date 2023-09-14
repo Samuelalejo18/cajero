@@ -98,6 +98,7 @@ bottom: 20px;
     }
 
     .container3 {
+
         border-radius: 20px;
         padding: 0;
         z-index: 2000;
@@ -105,7 +106,7 @@ bottom: 20px;
         height: 500px;
         width: 800px;
         display: flex;
-        gap: 0 60px;
+        gap: 0px 60px;
         flex-direction: row;
         justify-content: center;
         align-items: center;
@@ -120,6 +121,7 @@ bottom: 20px;
 
     .inputBox2 {
         position: relative;
+        top:20px;
         width: 300px;
 
         right: 20px;
@@ -218,11 +220,34 @@ bottom: 20px;
         width: 40px;
         height: 40px;
     }
+    #Remember{
+        position: relative;
+
+gap: 10px;
+        padding-left: 180px;
+        padding-right: 180px;
+        border: 0;
+        margin: 0;
+        display: flex;
+
+        flex-direction: row;
+
+    }
+    #Remember span{
+        text-decoration: underline;
+        color: mediumpurple;
+    }
+    #Remember span:hover{
+        text-decoration: underline;
+        color: mediumpurple;
+        cursor: pointer;
+    }
     .button{
         gap: 20px;
         position: relative;
-        top: 50px;
+       top: 50px;
         display: flex;
+        flex-direction: row;
         justify-content: space-evenly;
     }
 
@@ -293,7 +318,10 @@ bottom: 20px;
 
 
 
-
+            <label id="Remember">
+                <input type="checkbox" >
+                <p>I accept the processing of data and the agreement on signatures in accordance with the proposed clauses.<span> See legal terms</span></p>
+            </label>
 
 
 
@@ -301,9 +329,8 @@ bottom: 20px;
 
 
     </div>
-        <div id="RegisterFather"></div>
-    <div class="button">
-        <button id="Cancel">
+        <div class="button">
+        <button  id="Cancel">
             <a  href="login1.html">
                 <p >cancel</p>
             </a>
@@ -315,6 +342,7 @@ bottom: 20px;
         </button>
     </div>
     </div>
+
 
 </main>
 

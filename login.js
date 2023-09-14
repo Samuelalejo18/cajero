@@ -6,7 +6,7 @@ const ingresar= document.getElementById('ingresar');
 const contra='Lukas2012Jake';
 const user='1014140745'
 const ElementFather=document.getElementById('incorrect');
-const Next= document.getElementById("siguiente");
+
 
 
 ingresar.addEventListener('click', function (){
@@ -47,9 +47,9 @@ const PassWordIncorrect2=document.createTextNode(' ❌ Incorrect password  ');
     }, 2000);
 }
 })
-Next.addEventListener('click', function (){
 
-})
+
+
 function showHide(){
     if(password.type==='password'){
         password.setAttribute('type','text');
