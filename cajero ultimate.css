@@ -56,7 +56,7 @@ p {
 
 }
 .navbar{
-
+    flex-direction: column;
     height: 9vh;
     grid-area: navbar;
     border-bottom: 3px solid white;
@@ -80,7 +80,7 @@ p {
     text-align: center;
     z-index: -10000;
     display: flex;
-
+    flex-direction: column;
 
 
     align-items: center;
