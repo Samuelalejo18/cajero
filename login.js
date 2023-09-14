@@ -17,7 +17,7 @@ if(user===response2 && contra===response  ){
     window.location.href = 'cajero ultimate.html';
 }else if(user===response2 && contra!==response ) {
 const PassWordIncorrect= document.createElement('p');
-const PassWordIncorrect2=document.createTextNode(' ❌ Contraseña incorrecta ');
+const PassWordIncorrect2=document.createTextNode(' ❌ Incorrect password  ');
     ElementFather.style.display= 'block';
     ElementFather.appendChild(PassWordIncorrect);
     ElementFather.appendChild(PassWordIncorrect2);
@@ -28,7 +28,7 @@ const PassWordIncorrect2=document.createTextNode(' ❌ Contraseña incorrecta ')
 } else if (response2.trim() === "" || response.trim() === "") {
 
     const UserdontE4 = document.createElement('p');
-    const UserdontE3 = document.createTextNode(' ❌ Ingresa un dato valido');
+    const UserdontE3 = document.createTextNode(' ❌ Enter valid information');
     ElementFather.appendChild(UserdontE4);
     ElementFather.appendChild(UserdontE3);
     ElementFather.style.display = 'block';
@@ -38,7 +38,7 @@ const PassWordIncorrect2=document.createTextNode(' ❌ Contraseña incorrecta ')
 } else if (user!==response2 && contra!==response) {
 
     const UserdontE = document.createElement('p');
-    const UserdontE2 = document.createTextNode(' ❌ El usuario no existe ');
+    const UserdontE2 = document.createTextNode(' ❌ Username does not exist');
     ElementFather.appendChild(UserdontE);
     ElementFather.appendChild(UserdontE2);
     ElementFather.style.display = 'block';
