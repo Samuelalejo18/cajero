@@ -7,7 +7,7 @@ const contra='Lukas2012Jake';
 const user='1014140745'
 const ElementFather=document.getElementById('incorrect');
 const Next= document.getElementById("siguiente");
-const Tarjet=document.getElementById("next");
+
 
 ingresar.addEventListener('click', function (){
     const response=password.value;
