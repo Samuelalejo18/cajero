@@ -17,11 +17,12 @@ boton.addEventListener('click', function () {
     Thanks.textContent = "We have sent you an email to recover your account.";
 boton.style.display="none";
 text.style.display="none";
-
+    wolf1.style.display="block";
 input.style.display="none";
 span.style.display="none";
 Home.style.display="block";
 botonCancel.style.display="none";
     card.appendChild(Thanks);
     div.appendChild(card);
+
 });
