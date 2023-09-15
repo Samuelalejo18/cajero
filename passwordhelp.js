@@ -17,6 +17,7 @@ boton.addEventListener('click', function () {
     Thanks.textContent = "We have sent you an email to recover your account.";
 boton.style.display="none";
 text.style.display="none";
+
 input.style.display="none";
 span.style.display="none";
 Home.style.display="block";
