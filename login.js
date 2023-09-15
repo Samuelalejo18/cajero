@@ -7,7 +7,22 @@ const contra='Lukas2012Jake';
 const user='1014140745'
 const ElementFather=document.getElementById('incorrect');
 
+const usuarios=[
+    {
+        name: "samuel",
+        usuario: "pepe"
+    },
+    {
+        name: "samuel2",
+        usuario: "pepe"
+    },
+    {
+        name: "samuel3",
+        usuario: "pepe"
+    }
+    ];
 
+console.log(usuarios[2]);
 
 ingresar.addEventListener('click', function (){
     const response=password.value;
