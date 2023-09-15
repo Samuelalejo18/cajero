@@ -7,6 +7,16 @@ body{
     margin: 0;
     background-color: rgb(25, 0, 32);
     min-height: 100%;
+    animation: aparecer 2s ease-in-out forwards;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0; /* Comienza completamente transparente */
+    }
+    100% {
+        opacity: 1; /* Termina completamente visible */
+    }
 }
 .grid_container{
     display: grid;
