@@ -13,34 +13,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Play:wght@400;700&family=Titan+One&display=swap"
           rel="stylesheet">
 </head>
-<body class="grid_container">
+<body class="grid_container" id="grid_container">
 
 
 
 
-<header class="header">
-    <img src="logo%20wolf.png" id="wolf_logo" alt="">
-    <p id="wolf_banck">Wolf Bank</p>
-</header>
+    <header class="header">
+      <img src="logo%20wolf.png" id="wolf_logo" alt="">
+      <p id="wolf_banck">Wolf Bank</p>
+    </header>
 
 
 
-<nav class="navbar">
-    <div class="button">
-   <button class="btn"><img src="retiro-de-efectivo.png" id="retiro" alt=""></button>
-        <button class="btn"><img src=" ingresar.png" id="ingresar" alt=""></button>
-            <button class="btn"> <img src="salir.png" id="salir" alt=""></button>
-    </div>
-</nav>
+     <nav class="navbar">
+        <div class="button">
+            <button class="btn" id="retiro1"><img src="retiro-de-efectivo.png" id="retiro" alt=""></button>
+           <button class="btn" id="ingresar1"><img src=" ingresar.png" id="ingresar" alt=""></button>
+            <button class="btn" id="salir1"> <img src="salir.png" id="salir" alt=""></button>
+        </div>
+      </nav>
 
 
 
 
-<aside class="sidebar">
- <div class="Products">
+     <aside class="sidebar">
+      <div class="Products">
 
-  <p>Tus productos</p>
-     <div class= "productos">
+       <p>Tus productos</p>
+      <div class= "productos">
          <form>
        <p>1014140745</p>
          <p>Número de cuenta</p>
@@ -49,45 +49,108 @@
          <p>$220.000</p>
          <p>Saldo disponible</p>
          </form>
-     </div>
-    </div>
-</aside>
+         </div>
+         </div>
+     </aside>
 
 
-<div class="modal_container" id="mondal_container">
-    <div class="modal">
+    <div class="modal_container" id="mondal_container">
+        <div class="modal" id="modal2">
         <h1 id="Sure"> Are you sure you want to log out?</h1>
-        <div class="buttonSingOff">
+          <div class="buttonSingOff">
             <button id="Signoff">
                 <a  href="login1.html">
                     <p >Sign off</p>
                 </a>
             </button>
 
-            <button  id="Cancel">
+            <button  class="Cancel" id="Cancel">
                 <p >Cancel</p>
             </button>
+          </div>
+       </div>
+
+        <div class="modal" id="modal3">
+            <h1> Enter money</h1>
+
+            <div class="inputBox2">
+                <div class="username"><label for="username1"></label><input type="number" id="username1">
+                    <span>$</span>
+
+                </div>
+            </div>
+            <div class="inputBox2">
+                <div class="username"><label for="username1"></label><input type="password" id="username1">
+                    <span>Password</span>
+
+                </div>
+            </div>
+
+
+
+
+            <div class="buttonSingOff">
+                <button  class="Cancel" id="transaction">
+                    <p >Make transaction</p>
+                </button>
+                <button  class="Cancel" id="cancel2">
+                    <p >Cancel</p>
+                </button>
+            </div>
+
         </div>
+
+        <div class="modal" id="modal4">
+            <h1> withdraw cashy</h1>
+
+            <div class="inputBox2">
+                <div class="username"><label for="username1"></label><input type="number" id="username1">
+                    <span>$</span>
+
+                </div>
+            </div>
+            <div class="inputBox2">
+                <div class="username"><label for="username1"></label><input type="password" id="username1">
+                    <span>Password</span>
+
+                </div>
+            </div>
+
+
+
+
+            <div class="buttonSingOff">
+                <button  class="Cancel" id="transaction1">
+                    <p >Make transaction</p>
+                </button>
+                <button  class="Cancel" id="cancel3">
+                    <p >Cancel</p>
+                </button>
+            </div>
+
+        </div>
+
+
+
+
     </div>
-</div>
 
 
 
-<article class="main">
+     <article class="main">
     <p>Ultimos movimientos</p>
     <div class="Movimientos">
         <form>
         </form>
     </div>
-</article>
+    </article>
 
 
 
-<footer class="footer">
+    <footer class="footer">
     <img src="lobo.png" id="wolf" alt="">
     <p>Wolf Bank. All rights reserved 2023</p>
-</footer>
-
+    </footer>
 
 
 <script src="cajero.html.js"></script>
