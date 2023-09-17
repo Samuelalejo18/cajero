@@ -14,23 +14,33 @@
           rel="stylesheet">
 </head>
 <body class="grid_container">
+
+
+
+
 <header class="header">
     <img src="logo%20wolf.png" id="wolf_logo" alt="">
     <p id="wolf_banck">Wolf Bank</p>
 </header>
+
+
+
 <nav class="navbar">
     <div class="button">
-    <img src="retiro-de-efectivo.png" id="retiro" alt="">
-    <img src=" ingresar.png" id="ingresar" alt="">
-    <img src="salir.png" id="salir" alt="">
+   <button class="btn"><img src="retiro-de-efectivo.png" id="retiro" alt=""></button>
+        <button class="btn"><img src=" ingresar.png" id="ingresar" alt=""></button>
+            <button class="btn"> <img src="salir.png" id="salir" alt=""></button>
     </div>
 </nav>
+
+
+
+
 <aside class="sidebar">
  <div class="Products">
 
   <p>Tus productos</p>
      <div class= "productos">
-
          <form>
        <p>1014140745</p>
          <p>Número de cuenta</p>
@@ -41,20 +51,45 @@
          </form>
      </div>
     </div>
-
 </aside>
+
+
+<div class="modal_container" id="mondal_container">
+    <div class="modal">
+        <h1 id="Sure"> Are you sure you want to log out?</h1>
+        <div class="buttonSingOff">
+            <button id="Signoff">
+                <a  href="login1.html">
+                    <p >Sign off</p>
+                </a>
+            </button>
+
+            <button  id="Cancel">
+                <p >Cancel</p>
+            </button>
+        </div>
+    </div>
+</div>
+
+
+
 <article class="main">
     <p>Ultimos movimientos</p>
     <div class="Movimientos">
         <form>
-
         </form>
-
     </div>
 </article>
+
+
+
 <footer class="footer">
     <img src="lobo.png" id="wolf" alt="">
     <p>Wolf Bank. All rights reserved 2023</p>
 </footer>
+
+
+
+<script src="cajero.html.js"></script>
 </body>
 </html>

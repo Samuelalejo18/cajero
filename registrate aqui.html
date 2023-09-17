@@ -97,6 +97,9 @@ bottom: 20px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        align-content: center;
+        justify-items: center;
+
         cursor: default;
     }
 
@@ -106,7 +109,28 @@ bottom: 20px;
         font-size: 20px;
         font-family: 'Paytone One', sans-serif;
     }
+    #Register {
+        font-family: 'Paytone One', sans-serif;
+        border-radius: 20px;
+        padding-right: 50px;
+        padding-left: 50px;
+        z-index: 2000;
+        margin: 0;
+        height: 350px;
+        width: 600px;
+        display: none;
+        gap: 0px 60px;
+        position: absolute; /* Añade posición absoluta al elemento a centrar */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-bottom: 5px solid purple;
+        border-top: 5px solid purple;
 
+        color: white;
+        font-size: 25px;
+        text-align: center;
+    }
     .container3 {
 
         border-radius: 20px;
@@ -126,9 +150,22 @@ bottom: 20px;
 
     }
 
-
-
-
+    input[type="text"]{
+        accent-color: mediumorchid;
+        caret-color: mediumorchid;
+    }
+    input[type="email"]{
+        accent-color: mediumorchid;
+        caret-color: mediumorchid;
+    }
+    input[type="number"]{
+        accent-color: mediumorchid;
+        caret-color: mediumorchid;
+    }
+    input[type="password"]{
+        accent-color: mediumorchid;
+        caret-color: mediumorchid;
+    }
     .inputBox2 {
         position: relative;
         top:20px;
@@ -201,7 +238,10 @@ bottom: 20px;
         background-color: transparent;
         font-family: 'Paytone One', sans-serif;
     }
-
+    input[type="checkbox"]{
+        accent-color: mediumorchid;
+        caret-color: mediumorchid;
+    }
     #Cancel:hover{
         background-color:purple;
         border-color: black;
@@ -260,8 +300,49 @@ gap: 10px;
         flex-direction: row;
         justify-content: space-evenly;
     }
+    #wolf1{
 
+        width: 150px;
+        height: 150px;
+    }
 
+    #Home{
+        position: relative;
+        text-decoration: none;
+        outline: none;
+        *font-size: 20px;
+        border-radius: 20px;
+        padding: 5px 60px;
+        border: 2px solid white ;
+        cursor: pointer;
+        display: none;
+        background-color: transparent;
+        font-family: 'Paytone One', sans-serif;
+    }
+    #Home:hover{
+        background-color:purple;
+        border-color: black;
+    }
+    #Register2{
+        display: flex;
+        justify-content: center;
+        animation: aparecer 4s ease-in-out forwards;
+    }
+
+    @keyframes aparecer {
+        0% {
+            opacity: 0; /* Comienza completamente transparente */
+        }
+        100% {
+            opacity: 1; /* Termina completamente visible */
+        }
+    }
+    #Home1{
+        position: absolute; /* Añade posición absoluta al elemento a centrar */
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 </style>
     <script>
 
@@ -277,11 +358,12 @@ gap: 10px;
 
 </header>
 <main class="main">
+
     <div class="container2">
         <p id="Recover">Welcome, Register and fill out your personal information.</p>
 
 
-        <div class="container3">
+        <div class="container3" id="container3.1">
 
             <div class="inputBox2">
                 <div class="username"><label for="username1"></label><input type="text" id="username1">
@@ -308,13 +390,13 @@ gap: 10px;
                 </div>
             </div>
             <div class="inputBox2">
-                <div class="username"><label for="username1"></label><input type="text" id="username1">
+                <div class="username"><label for="username1"></label><input type="password" id="username1">
                     <span>Password</span>
 
                 </div>
             </div>
             <div class="inputBox2">
-                <div class="username"><label for="username1"></label><input type="email" id="username1">
+                <div class="username"><label for="username1"></label><input type="password" id="username1">
                     <span>Password Again</span>
 
                 </div>
@@ -338,7 +420,6 @@ gap: 10px;
 
 
 
-
     </div>
         <div class="button">
         <button  id="Cancel">
@@ -351,17 +432,27 @@ gap: 10px;
         <button  id="Next">
             <p >Next</p>
         </button>
+      </div>
     </div>
+<div id="Register2">
+    <div id="Register">
+        <p>Thank you for registering. In a maximum of 3 business days, we will contact you to complete your registration. Welcome to Wolf Bank!!</p>
+        <img src="lobologo3.png" id="wolf1" alt="">
     </div>
-
-
+    <div id="Home1"><
+    <button id="Home">
+        <a  href="login1.html">
+            <p >Home</p>
+        </a>
+</div>
+ </div>
 </main>
 
 <footer2 class="final">
     <img src="lobo2.png" id="wolf" alt="">
     <p>Wolf Bank. All rights reserved 2023</p>
 </footer2>
-<script src="login.js"></script>
+<script src="Register.js"></script>
 </body>
 </html>
 
