@@ -51,9 +51,9 @@ transaction.addEventListener('click',()=>{
 
             modal3_1.style.display='block';
             modal3.style.display='none';
-            setTimeout(() =>{
+           setTimeout(() =>{
                 background.style.display='none';
-            },2000);
+            },4000);
 
         }
 
@@ -197,6 +197,26 @@ function showHide2(){
         togglePassword.classList.remove('hide')
     }
 }
+
+
+function mostrarFechaHora() {
+    const fechaYHoraActual = new Date();
+    const fecha = fechaYHoraActual.toLocaleDateString();
+    const hora = fechaYHoraActual.toLocaleTimeString();
+    const elementoFechaHora = document.getElementById("Date");
+    elementoFechaHora.innerHTML =  "Current date: " + fecha + "<br>Current time: " + hora;
+
+
+}
+
+window.onload = mostrarFechaHora;
+
+const elementoValue = document.getElementById("Value");
+money1.addEventListener("input", function() {
+
+    elementoValue.textContent = money1.value;
+
+});
 
 
 
