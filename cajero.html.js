@@ -1,8 +1,11 @@
 const salir1=document.getElementById("salir1");
 const modal2=document.getElementById("modal2");
 const Cancel=document.getElementById("Cancel");
-const background=document.getElementById("mondal_container")
+const background=document.getElementById("mondal_container");
+
 const modal3=document.getElementById("modal3");
+const modal3_1=document.getElementById("modal3_1");
+modal3_1.style.display='none';
 const ingresar=document.getElementById('ingresar');
 const Cancel2=document.getElementById("cancel2");
 const modal4=document.getElementById("modal4");
@@ -45,12 +48,13 @@ transaction.addEventListener('click',()=>{
             },2000);
 
         } else{
-            const correctTransaction= document.createElement('p');
-            const correctTransaction2=document.createTextNode(' Succesful transaction');
 
+            modal3_1.style.display='block';
+            modal3.style.display='none';
+            setTimeout(() =>{
+                background.style.display='none';
+            },2000);
 
-            modal3.appendChild(correctTransaction);
-            modal3.appendChild(correctTransaction2);
         }
 
     }else if( contra!==response ){
