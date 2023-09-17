@@ -4,7 +4,7 @@ let togglePassword=document.getElementById('toggle');
 let username1= document.getElementById('username1');
 const ingresar= document.getElementById('ingresar');
 const contra='Lukas2012Jake';
-const user='1014140745'
+const user='1014140745';
 const ElementFather=document.getElementById('incorrect');
 
 const usuarios=[
