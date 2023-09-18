@@ -1,6 +1,7 @@
 <component name="InspectionProjectProfileManager">
   <profile version="1.0">
     <option name="myName" value="Project Default" />
+    <inspection_tool class="CssInvalidAtRule" enabled="false" level="ERROR" enabled_by_default="false" />
     <inspection_tool class="DuplicatedCode" enabled="true" level="WEAK WARNING" enabled_by_default="true">
       <Languages>
         <language minSize="11" name="Style Sheets" />
@@ -9,7 +10,7 @@
     <inspection_tool class="HtmlUnknownTag" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="myValues">
         <value>
-          <list size="11">
+          <list size="14">
             <item index="0" class="java.lang.String" itemvalue="nobr" />
             <item index="1" class="java.lang.String" itemvalue="noembed" />
             <item index="2" class="java.lang.String" itemvalue="comment" />
@@ -21,6 +22,9 @@
             <item index="8" class="java.lang.String" itemvalue="mai" />
             <item index="9" class="java.lang.String" itemvalue="content" />
             <item index="10" class="java.lang.String" itemvalue="footer2" />
+            <item index="11" class="java.lang.String" itemvalue="header2" />
+            <item index="12" class="java.lang.String" itemvalue="nav2" />
+            <item index="13" class="java.lang.String" itemvalue="article2" />
           </list>
         </value>
       </option>

@@ -22,9 +22,14 @@ const balance=document.getElementById("Balance");
 
 const transaction=document.getElementById('transaction');
 const Withdrawals2=document.getElementById('transaction2');
+function updateAdmissionDate() {
+    var admissionElement = document.getElementById("admission");
+    var currentDate = new Date();
+    var formattedDate = currentDate.toLocaleString(); // Formatea la fecha y hora según la configuración regional
 
-
-
+    admissionElement.textContent = formattedDate;
+}
+window.onload = updateAdmissionDate;
 transaction.addEventListener('click',()=>{
    const response=password1.value;
     const response2= money1.value;
@@ -207,6 +212,11 @@ function mostrarFechaHora() {
     const fechaYHoraActual = new Date();
     const fecha = fechaYHoraActual.toLocaleDateString();
     const hora = fechaYHoraActual.toLocaleTimeString();
+
+  //  const admission=document.getElementById('admission');
+   // admission.innerHTML =  "Current date: " + fecha + "<br>Current time: " + hora;
+
+
     const elementoFechaHora = document.getElementById("Date");
     elementoFechaHora.innerHTML =  "Current date: " + fecha + "<br>Current time: " + hora;
 
