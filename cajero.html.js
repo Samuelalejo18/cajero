@@ -2,7 +2,6 @@ const salir1=document.getElementById("salir1");
 const modal2=document.getElementById("modal2");
 const Cancel=document.getElementById("Cancel");
 const background=document.getElementById("mondal_container");
-
 const modal3=document.getElementById("modal3");
 const modal3_1=document.getElementById("modal3_1");
 modal3_1.style.display='none';
@@ -17,6 +16,10 @@ let togglePassword=document.getElementById('toggle');
 const Withdrawals=document.getElementById('username3')
 const password2=document.getElementById("username4");
 const contra='Lukas2012Jake';
+let Available_balance=200000;
+
+const balance=document.getElementById("Balance");
+
 const transaction=document.getElementById('transaction');
 const Withdrawals2=document.getElementById('transaction2');
 
@@ -26,7 +29,7 @@ transaction.addEventListener('click',()=>{
    const response=password1.value;
     const response2= money1.value;
     if( contra===response  ){
-        if(response2 >=1000){
+        if(response2 >=10000000){
             const incorrectTransaction= document.createElement('p');
             const incorrectTransaction2=document.createTextNode('  The transaction exceeds the allowed amount ');
 
@@ -36,7 +39,7 @@ transaction.addEventListener('click',()=>{
             setTimeout(() =>{
                 location.reload();
             },2000);
-        }else if(response2 <=10){
+        }else if(response2 <=1000){
             const incorrectTransaction3= document.createElement('p');
             const incorrectTransaction4=document.createTextNode(' The transaction is less than the allowed amount');
 
@@ -48,11 +51,15 @@ transaction.addEventListener('click',()=>{
             },2000);
 
         } else{
+            const valorEntero = parseInt(money1.value);
+            balance.innerHTML =  Available_balance+valorEntero;
 
             modal3_1.style.display='block';
             modal3.style.display='none';
            setTimeout(() =>{
                 background.style.display='none';
+               modal3_1.style.display='none';
+               modal3.style.display='block';
             },4000);
 
         }
@@ -72,10 +79,11 @@ transaction.addEventListener('click',()=>{
 })
 
 Withdrawals2.addEventListener('click',()=>{
+    modal3.style.display='none';
     const response3=password2.value;
     const response4= Withdrawals.value;
     if( contra===response3  ){
-        if(response4 >=1000){
+        if(response4 >=10000000){
             const incorrectWithdrawals= document.createElement('p');
             const incorrectWithdrawals2=document.createTextNode('You cannot withdraw money beyond the allowed amount ');
 
@@ -85,7 +93,7 @@ Withdrawals2.addEventListener('click',()=>{
             setTimeout(() =>{
                 location.reload();
             },2000);
-        }else if(response4 <=10){
+        }else if(response4 <=1000){
             const incorrectWithdrawals3= document.createElement('p');
             const incorrectWithdrawals4=document.createTextNode(' You cannot withdraw money less than the allowed amount');
 
@@ -97,12 +105,8 @@ Withdrawals2.addEventListener('click',()=>{
             },2000);
 
         } else{
-            const correctWithdrawals= document.createElement('p');
-            const correctWithdrawals2=document.createTextNode('Successful money withdrawal');
-
-
-            modal4.appendChild(correctWithdrawals);
-            modal4.appendChild(correctWithdrawals2);
+            const valorEntero2 = parseInt(Withdrawals.value);
+            balance.innerHTML =  Available_balance-valorEntero2;
         }
 
     }else if( contra!==response3 ){
@@ -217,7 +221,6 @@ money1.addEventListener("input", function() {
     elementoValue.textContent = money1.value;
 
 });
-
 
 
 
