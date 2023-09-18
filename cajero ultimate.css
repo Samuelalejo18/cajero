@@ -41,21 +41,21 @@ z-index: 10;
 .header{
 
     grid-area: header;
-
+position: fixed;
     height: 9vh;
-    margin-top:0.5rem ;
+
     margin-left: 2rem;
     display: flex;
     justify-content: start;
     align-content: center;
     align-items: center;
-
+    background-color: rgb(25, 0, 32);
 }
 
 .header2{
 
     grid-area: header2;
-
+    box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.1);
     height: 14vh;
     margin-top:0.5rem ;
     margin-left: 6rem;
@@ -92,8 +92,10 @@ font-family: sans-serif;
 #retiro,#pay1,#trans1,  #ingresar, #salir{
     height: 50px;
     width: 50px;
-
+    transition: transform 0.3s ease; /* Agregar una transición suave para el zoom */
 }
+
+
 .column{
     flex-direction: column;
     color: white;
@@ -104,10 +106,11 @@ font-family: sans-serif;
     margin-top:0.5rem ;
     margin-right: 4rem;
     grid-area: navbar;
-
+    background-color: rgb(25, 0, 32);
     z-index: 100;
     display: flex;
     gap: 1rem;
+    font-family: sans-serif;
     justify-content: end;
     align-content: center;
     align-items: center;
@@ -120,7 +123,7 @@ font-family: sans-serif;
     margin-top:0.5rem ;
     margin-right: 1rem;
     grid-area: nav2;
-
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.1);
     z-index: 100;
     display: flex;
     gap: 1rem;
@@ -141,29 +144,32 @@ font-family: sans-serif;
     flex-direction: row;
 
     justify-content: space-between;
+
 }
 .btn{
     background-color: transparent;
     border:0;
     cursor: pointer;
+    transition: transform 0.3s ease;
+}
 
-
-
+.btn:hover {
+    transform: scale(1.3);
 }
 ::-webkit-scrollbar {
-    width: 1px; /* Ancho de la barra de desplazamiento */
+    width: 1px;
 }
 
 .sidebar{
     background-color: rgb(245,244,245);
     text-align: center;
-    z-index: 0;
+
     color: black;
     display: flex;
     font-family: sans-serif;
     grid-area: sidebar;
-    height: 14vh;
-    border-bottom:1px solid red ;
+    height: 15vh;
+
     justify-content:space-around;
     align-content: center;
     align-items: center;
@@ -182,7 +188,7 @@ font-family: sans-serif;
     margin: 0;
     padding: 0;
     grid-area: main;
-    height: 60vh;
+    height: 30vh;
     z-index: -10000;
     display: flex;
     flex-direction: row;
@@ -192,7 +198,7 @@ font-family: sans-serif;
     justify-content: center;
     font-family: 'Paytone One', sans-serif;
     font-size: 30px;
-   border-bottom: 1px solid red;
+
 
 
 }
@@ -202,15 +208,11 @@ font-family: sans-serif;
 .productos{
 
 position: relative;
-    width: 16rem;
-    height: 10rem;
-border-radius:8px ;
-    background: #1c1c1c;
-    overflow: hidden;
-    font-size: 20px;
-
+    width: 17rem;
+    height: 12rem;
+border-radius:5px ;
 }
-.productos form{
+.productos .form{
     position: absolute;
     inset:4px;
     background:white;
@@ -218,52 +220,101 @@ border-radius:8px ;
     border-radius:8px ;
     z-index: 2;
     display: flex;
+flex-direction: row;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+#pig{
+    width: 2rem;
+    height: 2rem;
+    position: relative;
+    bottom: 2.7rem;
+    right: 1.7rem;
+}
+#Cta{
+    display: flex;
+    font-size: 1rem;
+    position: relative;
+    bottom: 5.7rem;
+left: 1rem;
+    width: 10rem;
+    padding: 0;
+    margin: 0;
+border: 0;
+    font-family: sans-serif;
     flex-direction: column;
 }
-.productos::before{
-    content:'';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 400px;
-    height: 500px;
-    background: linear-gradient(0deg,transparent,transparent, rgb(88,29,169),rgb(88,29,169),rgb(88,29,169));
-    z-index: 1;
-    transform-origin:bottom right ;
-    animation: animate 3s linear infinite;
+#show1{
+width: 1rem;
+    height: 1rem;
+    position: relative;
+    bottom: 0.8rem;
 }
-.productos::after{
-    content:'';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 400px;
-    height: 500px;
-    background: linear-gradient(0deg,transparent,transparent, rgb(239,19,54),rgb(239,19,54),rgb(239,19,54));
-    z-index: 1;
-    transform-origin:bottom right ;
-    animation: animate 3s linear infinite;
-    animation-delay:-10s ;
+#btnpoints{
+    border: none;
+    background: none;
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    position: relative;
+    bottom: 9rem;
+    left: 11.5rem;
+}
+#points{
+    width: 2rem;
+    height: 2rem;
 }
 
+#availableBalance{
+    border: none;
+    padding: 0;
+    margin: 0;
 
-@keyframes animate {
-    0%{
-        transform: rotate(0deg);
-    }
-100%
-{transform: rotate(360deg)}
-}
-
-.footer{
-    background-color: rgb(245,244,245);
-    grid-area: footer;
-
-    height: 8vh;
     display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+    font-family: sans-serif;
+    flex-direction: column;
+    color: black;
+
+}
+
+#Balance{
+color: rgb(140,76,209);
+    font-size: 1.5rem;
+    position: relative;
+
+    right: 11rem;
+}
+#Available{
+    font-size: 0.9rem;
+    position: relative;
+    width: 8rem;
+   bottom: 1.8rem ;
+    right: 11rem;
+}
+.Seedetails{
+    
+    padding: 0;
+    margin: 0;
+    top: 6rem;
+position: relative;
+
+    right: 17rem;
+    font-family: sans-serif;
+}
+.details{
+    border: none;
+    padding: 0;
+    margin: 0;
+    background: none;
+    font-size: 1.1rem;
+    width: 10rem;
+    color: rgb(140,76,209);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.details:hover {
+    transform: scale(1.1);
 }
 #wolf{
     position: relative;
@@ -527,7 +578,7 @@ left:7rem;
     display: flex;
     font-family: sans-serif;
     grid-area: article2;
-    height: 12vh;
+    height: 20vh;
 
     justify-content: center;
     align-content: center;
@@ -540,4 +591,77 @@ left:7rem;
 
 
 
+}
+
+
+.footer{
+    background-color: rgb(245,244,245);
+    grid-area: footer;
+
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#moneyProductos{
+    display: flex;
+    flex-direction: row;
+    font-family: sans-serif;
+    width: 36em;
+    border-radius: 0.5rem;
+    border: none;
+   background-color: white;
+    align-items: center;
+    height: 6rem;
+font-size: 15px;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+#moneyProductos:hover {
+    transform: scale(1.1);
+}
+
+
+#help{
+    background-color:rgb(140,76,209);
+    color: white;
+    font-size: 15px;
+    padding: 0.8rem;
+    width: 5rem;
+    border-radius: 0.3rem;
+    border: none;
+box-shadow: 0px 7px 6px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s ease;
+    cursor: pointer;
+    position: relative;
+}
+#help::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent; /* Ajusta el tamaño del cateto adyacente */
+    border-right: 7px solid transparent; /* Ajusta el tamaño del cateto adyacente */
+    border-top: 15px solid rgb(140, 76, 209); /* Ajusta el tamaño del lado opuesto */
+    position: absolute;
+    bottom: -20px; /* Coloca el triángulo por debajo del botón */
+    right: 0; /* Ajusta la posición del triángulo a la derecha */
+}
+#help:hover {
+    transform: scale(1.1);
+}
+
+.imageMoney{
+    height: 3rem;
+    width: 3rem;
+}
+
+.savingsAccounts{
+        position: relative;
+    bottom: 2.5rem;
+    font-family: sans-serif;
+    font-size: 1rem;
 }
