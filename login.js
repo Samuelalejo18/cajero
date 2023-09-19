@@ -29,7 +29,7 @@ ingresar.addEventListener('click', function (){
     const response2= username1.value;
 
 if(user===response2 && contra===response  ){
-    window.location.href = 'cajero ultimate.html';
+    window.location.href = 'Cajero_ultimate.html';
 }else if(user===response2 && contra!==response ) {
 const PassWordIncorrect= document.createElement('p');
 const PassWordIncorrect2=document.createTextNode(' ❌ Incorrect password  ');
