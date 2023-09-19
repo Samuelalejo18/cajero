@@ -16,10 +16,10 @@ body{
 
 @keyframes aparecer {
     0% {
-        opacity: 0; /* Comienza completamente transparente */
+        opacity: 0;
     }
     100% {
-        opacity: 1; /* Termina completamente visible */
+        opacity: 1;
     }
 }
 
@@ -92,7 +92,7 @@ body{
 #retiro,#pay1,#trans1,  #ingresar, #salir{
     height: 50px;
     width: 50px;
-    transition: transform 0.3s ease; /* Agregar una transición suave para el zoom */
+    transition: transform 0.3s ease;
 }
 
 
@@ -150,14 +150,14 @@ body{
     background-color: transparent;
     border:0;
     cursor: pointer;
-    transition: transform 0.3s ease; /* Agregar una transición suave para el zoom */
+    transition: transform 0.3s ease;
 }
 
 .btn:hover {
-    transform: scale(1.3); /* Aplicar un zoom del 110% cuando el mouse pasa por encima */
+    transform: scale(1.3);
 }
 ::-webkit-scrollbar {
-    width: 1px; /* Ancho de la barra de desplazamiento */
+    width: 1px;
 }
 
 .sidebar{
@@ -338,10 +338,10 @@ body{
 
 @keyframes aparecer {
     0% {
-        opacity: 0; /* Comienza completamente transparente */
+        opacity: 0;
     }
     100% {
-        opacity: 1; /* Termina completamente visible */
+        opacity: 1;
     }
 }
 
