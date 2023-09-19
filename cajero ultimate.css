@@ -203,7 +203,7 @@ font-family: sans-serif;
 
 
 
-.productos{
+.productos {
 
 position: relative;
     width: 17rem;
@@ -294,8 +294,9 @@ color: rgb(140,76,209);
     margin: 0;
     top: 6rem;
 position: relative;
-
-    right: 17rem;
+    border-top:  1px solid rgba(30, 29, 29, 0.19);
+    width: 300px;
+    right: 17.5rem;
     font-family: sans-serif;
 }
 .details{
@@ -569,10 +570,7 @@ left:7rem;
     background-size: cover;
 }
 
-.button-with-tail {
-    display: inline-block;
-    position: relative;
-}
+
 
 #article{
     background-color: white;
@@ -583,7 +581,7 @@ left:7rem;
     font-family: sans-serif;
     grid-area: article;
     height: 20vh;
-    border-bottom:1px solid red ;
+
     justify-content: center;
 
     align-items: center;
@@ -670,12 +668,12 @@ transition: transform 0.3s ease;
     content: '';
     width: 0;
     height: 0;
-    border-left: 7px solid transparent; /* Ajusta el tamaño del cateto adyacente */
-    border-right: 7px solid transparent; /* Ajusta el tamaño del cateto adyacente */
-    border-top: 15px solid rgb(140, 76, 209); /* Ajusta el tamaño del lado opuesto */
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 15px solid rgb(140, 76, 209);
     position: absolute;
-    bottom: -20px; /* Coloca el triángulo por debajo del botón */
-    right: 0; /* Ajusta la posición del triángulo a la derecha */
+    bottom: -20px;
+    right: 0;
 }
 #help:hover {
     transform: scale(1.1);
@@ -692,3 +690,155 @@ transition: transform 0.3s ease;
     font-family: sans-serif;
     font-size: 1rem;
 }
+
+#Investments{
+    height: 3rem;
+    width: 3rem;
+    position: relative;
+    bottom: 2.7rem;
+    right: 2rem;
+}
+.Textinversion{
+    position: relative;
+    bottom: 3rem;
+    font-family: sans-serif;
+    font-size: 1rem;
+
+}
+
+.TakeInvestment{
+    position: relative;
+    width:1000rem ;
+    height: 1rem;
+    top: 1rem;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+}
+
+.Seeinvestments{
+
+    padding: 0;
+    margin: 0;
+    top: 6rem;
+    position: relative;
+
+    right: 7rem;
+    border-top:  1px solid rgba(30, 29, 29, 0.19);
+    width: 300px;
+    font-family: sans-serif;
+}
+.investmentslook{
+    border: none;
+    padding: 0;
+    margin: 0;
+    background: none;
+    font-size: 1.1rem;
+    width: 10rem;
+    color: rgb(140,76,209);
+    cursor: pointer;
+}
+
+.productos2 {
+
+    position: relative;
+    width: 17rem;
+    height: 13rem;
+    border-radius:5px ;
+}
+.productos2 .border1{
+    position: absolute;
+    inset:4px;
+
+    padding: 50px 40px;
+    border-radius:8px ;
+    z-index: 2;
+display: flex;
+    justify-content: start;
+    flex-direction:column;
+
+    border: 1px dashed rgba(0, 0, 0, 0.45) ;
+}
+
+#cdttoday{
+    font-family: sans-serif;
+    font-size: 1.1rem;
+position: relative;
+    bottom: 3rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    border-bottom: 1px solid purple;
+}
+.TextCDT{
+    font-family: sans-serif;
+    font-size:0.8rem;
+   position: relative;
+    bottom: 2.5rem;
+    text-align: center;
+
+}
+
+.OpenCDT {
+    position: relative;
+    bottom: 3rem;
+right: 0.2rem;
+
+}
+.cdt{
+
+
+    width: 12rem;
+    height: 2.5rem;
+    color: rgb(140,76,209);
+    border-color: rgb(140,76,209) ;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.cdt:hover {
+    transform: scale(1.1);
+}
+
+.taxcertificate{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    height: 5rem;
+    width: 45rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.taxcertificate:hover{
+    transform: scale(1.1);
+}
+
+#download{
+    background-color: white;
+    height: 2.5rem;
+    position: relative;
+    left: 2rem;
+border-radius:1rem ;
+    width: 7rem;
+    color: rgb(140,76,209);
+    border-color: rgb(140,76,209) ;
+    cursor: pointer;
+
+}
+#download:hover{
+    color: white;
+    background: rgb(140,76,209);
+
+}
+
+#new{
+    background: mediumorchid;
+    color: white;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius:1rem ;
+}
+
