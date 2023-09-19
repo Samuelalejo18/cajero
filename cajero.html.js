@@ -23,11 +23,10 @@ const balance=document.getElementById("Balance");
 const transaction=document.getElementById('transaction');
 const Withdrawals2=document.getElementById('transaction2');
 function updateAdmissionDate() {
-    var admissionElement = document.getElementById("admission");
-    var currentDate = new Date();
-    var formattedDate = currentDate.toLocaleString(); // Formatea la fecha y hora según la configuración regional
-
-    admissionElement.textContent = formattedDate;
+    const admissionElement = document.getElementById("admission");
+    const currentDate = new Date();
+    // Formatea la fecha y hora según la configuración regional
+    admissionElement.textContent = currentDate.toLocaleString();
 }
 window.onload = updateAdmissionDate;
 transaction.addEventListener('click',()=>{
