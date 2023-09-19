@@ -72,6 +72,7 @@ function showHide(){
     } else{
         password.setAttribute('type','password');
         togglePassword.classList.remove('hide')
+
     }
 }
 
